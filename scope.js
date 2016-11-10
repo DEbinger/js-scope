@@ -2,11 +2,11 @@
 var isCookieJarOpen = null;
 
 function closeLid() {
-  /* answer here */
+  isCookieJarOpen = false;
 }
 
 function openLid() {
-  /* answer here */
+  isCookieJarOpen = true;
 }
 
 
@@ -17,11 +17,10 @@ function outerFunction() {
 
   function innerFunction() {
     var world = 'World';
-    return /* answer here */;
+    return hello + " " + world;
   }
-  innerFunction();
+  return innerFunction();
 }
-
 
 // This is a function that takes in a 2d-array (or matrix) and returns the sum of all elements
 // It's broken due to count variables colliding into each other.  Fix it!
